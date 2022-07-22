@@ -9,8 +9,6 @@ employee.GradeAdded += OnGradeAdded;
 
 employee.GradeLowerThanThree += LowGrade;
 
-//var imie = employee.napis;
-//var listy = employee.grades;
 
 EnterGrade(employee);
 
@@ -21,7 +19,7 @@ static void OnGradeAdded(object sender, EventArgs args)
 
 static void LowGrade(object sender, EventArgs args)
 {
-    Console.WriteLine("Oh no we must inform the parents!");
+    Console.WriteLine("Oh no, this employee's performance should be monitored!");
 }
 
 static void EnterGrade(IEmployee employee)
