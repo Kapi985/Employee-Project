@@ -59,7 +59,6 @@ public class SavedEmployee : EmployeeBase
         using(var writer = File.AppendText($"{Name}.txt"))
         using(var writer2 = File.AppendText($"audit.txt"))
         {
-            //const string FILENAME = "File Name";
              if(grade >= 0 && grade <= 6)
             {
                 writer.WriteLine(grade);
