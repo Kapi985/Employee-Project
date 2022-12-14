@@ -59,7 +59,7 @@ public class SavedEmployee : EmployeeBase
         using(var writer = File.AppendText($"{Name}.txt"))
         using(var writer2 = File.AppendText($"audit.txt"))
         {
-             if(grade >= 1 && grade <= 6)
+             if(grade > 0 && grade <= 6)
             {
                 writer.WriteLine(grade);
                 if(GradeAdded != null)
